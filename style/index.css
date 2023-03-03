@@ -41,6 +41,20 @@ body {
 /* ------------------------------- */
 
 
+#hero-banner {
+    background: #fff url("../images/hero-banner.jpg") center center / cover no-repeat;
+    height: 100vh; 
+    text-align: center; 
+    overflow: hidden; 
+}
+
+.title {
+    font-size: 46px;
+    font-weight: 600;
+}
+
+
+
 
 
 /* ------------------------------- */
