@@ -47,14 +47,24 @@ header {
 .flex {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+header .title {
+    line-height: 76px;
+    text-align: center;
+    vertical-align:middle;
+    color: var(--app-header-text-color);
+    text-decoration: none;
 }
 
 header .title h1 {
     color: var(--app-header-text-color);
-    font-size: 26px;
+    font-size: 24px;
     font-weight: 700;
     letter-spacing: 0.2px;
     line-height: 76px;
+    margin-left: 5px;
 }
 
 nav ul li {
@@ -86,6 +96,53 @@ nav ul li a:hover {
 .scrolled {
     animation: all .25s ease-in-out;
     box-shadow: var(--app-body-box-shadow);
+}
+
+@media (max-width:768px) {
+    nav > ul {
+        display: none;
+    }
+
+    .navbar:first-child {
+        display: block;
+        text-align: right;
+    }
+
+    nav ul li {
+        text-align: right;  
+    }
+
+    nav ul li ~ li {
+        border-top: 1px solid rgba(250, 250, 250, 0.1);
+    }
+
+    nav ul li a:hover {
+        border-bottom: none;
+    }
+
+    .show-menu-responsive {
+        position: absolute;
+        top: 50px;
+        left: 0;
+        right: 0;
+    }
+
+    .show {
+        display: grid;
+    }
+
+    .not-show {
+        display: none;
+    }
+}
+
+@media (min-width:768px) {
+    nav > ul {
+        display: block;
+    }
+    .navbar {
+        display: none;
+    }    
 }
 
 /* ------------------------------- */
