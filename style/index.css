@@ -50,7 +50,13 @@ body {
     place-items: center;   
 }
 
-
+.content {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    justify-content: center;
+    place-content: center;
+}
 .h-text {
     display: grid;
     text-align: center;
@@ -60,20 +66,20 @@ body {
     color: var(--app-gray-section);
 }
 
-.title {
-    font-size: 46px;
+.h-title {
+    font-size: 55px;
     font-weight: 800;
+    color: var(--app-body-background-color);
 }
 
 .about-text {
     font-size: 22px;
     font-weight: 500;
+    margin-top: 15px;
 }
 
 
 button {
-    margin-top: 15px;
-    margin-bottom: 15px;
     width: 200px;
     height: 55px;
     text-align: center;
@@ -81,22 +87,26 @@ button {
     border-radius: 10px;
     transition: all 0.25s ease-in-out;
     box-shadow: 2px 2px 2px rgb(0 0 0 / 0.1);
-  }
-  
-  button a {
+    margin-top: 20px;
+    margin-bottom: 15px;
     text-decoration: none;
     letter-spacing: 0.2px;
-    font-size: 16px;
     font-weight: 600;
+    font-size: 16px;
     color: var(--app-button-text-color);
     transition: all 0.25s ease-in-out;
   }
   
-  button:hover {
+button:hover {
     background-color: var(--app-button-hover-background-color);
     color: var(--app-button-hover-text-color);
     cursor: pointer;
-  }
+}
+
+button a:hover {
+    color: var(--app-button-hover-text-color);
+}
+
 
 
 
