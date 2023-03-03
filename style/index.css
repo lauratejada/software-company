@@ -108,6 +108,19 @@ button a:hover {
     color: var(--app-button-hover-text-color);
 }
 
+.n-index a {
+    position:left;
+    color: var(--app-body-background-color);
+}
+
+.nav-media {
+    display:flex;
+    text-align: left;
+    justify-content: space-between;
+}
+
+
+
 @media (min-width:768px) {
 
 .container {
