@@ -1,0 +1,54 @@
+@import url(reset.css);
+
+:root {
+    --app-body-background-color: #fff;
+    --app-body-text-color: #565656; 
+    --app-gray-section: #f3f6ff;
+    --app-title-color: #0b0f19;
+    --app-header-background-color: #fff;
+    --app-header-text-color: #0b0f19;
+    --app-button-background-color: #6366f1;
+    --app-button-text-color: #fff;
+    --app-button-hover-background-color: #fff;
+    --app-button-hover-text-color: #6366f1;   
+    --app-footer-background-color: #0b0f19;
+    --app-footer-text-color: #fff;
+}
+
+body {
+    background-color: var(--app-body-background-color);
+    color: var(--app-body-text-color);
+}
+
+/* ------------------------------- */
+/* CSS Page Container              */
+/* ------------------------------- */
+
+.container {
+    width: min(100% - 30px, 1080px);
+    margin-inline: auto;
+}
+
+/* ------------------------------- */
+/* HEADER                           */
+/* ------------------------------- */
+
+
+
+
+/* ------------------------------- */
+/* MAIN - HERO BANNER              */
+/* ------------------------------- */
+
+
+
+
+/* ------------------------------- */
+/* MAIN - SERVCES                  */
+/* ------------------------------- */
+
+
+
+/* ------------------------------- */
+/* FOOTER                           */
+/* ------------------------------- */
