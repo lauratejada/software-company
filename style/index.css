@@ -46,14 +46,57 @@ body {
     height: 100vh; 
     text-align: center; 
     overflow: hidden; 
+    display: grid;
+    place-items: center;   
+}
+
+
+.h-text {
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    display: grid;
+    text-align: center;
+    color: var(--app-gray-section);
 }
 
 .title {
     font-size: 46px;
-    font-weight: 600;
+    font-weight: 800;
+}
+
+.about-text {
+    font-size: 22px;
+    font-weight: 500;
 }
 
 
+button {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 200px;
+    height: 55px;
+    text-align: center;
+    background-color: var(--app-button-background-color);
+    border-radius: 10px;
+    transition: all 0.25s ease-in-out;
+    box-shadow: 2px 2px 2px rgb(0 0 0 / 0.1);
+  }
+  
+  button a {
+    text-decoration: none;
+    letter-spacing: 0.2px;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--app-button-text-color);
+    transition: all 0.25s ease-in-out;
+  }
+  
+  button:hover {
+    background-color: var(--app-button-hover-background-color);
+    color: var(--app-button-hover-text-color);
+    cursor: pointer;
+  }
 
 
 
