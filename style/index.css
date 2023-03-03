@@ -42,12 +42,13 @@ body {
 
 
 #hero-banner {
-    background: #fff url("../images/hero-banner.jpg") center center / cover no-repeat;
+    background: rgba(168, 168, 168, 1) url("../images/hero-banner.jpg") center center / cover no-repeat;
     height: 100vh; 
     text-align: center; 
     overflow: hidden; 
     display: grid;
     place-items: center;   
+    background-blend-mode: multiply; 
 }
 
 .content {
@@ -57,6 +58,7 @@ body {
     justify-content: center;
     place-content: center;
 }
+
 .h-text {
     display: grid;
     text-align: center;
@@ -77,7 +79,6 @@ body {
     font-weight: 500;
     margin-top: 15px;
 }
-
 
 button {
     width: 200px;
@@ -107,6 +108,37 @@ button a:hover {
     color: var(--app-button-hover-text-color);
 }
 
+@media (min-width:768px) {
+
+.container {
+    width: 100%;
+}
+
+.h-title {
+    font-size: 40px;
+}
+
+.about-text {
+    font-size: 20px;
+}
+
+}
+
+@media (max-width:768px) {
+
+.container {
+    width: 100%;
+}
+
+.h-title {
+    font-size: 30px;
+}
+
+.about-text {
+    font-size: 20px;
+}
+
+}
 
 
 
