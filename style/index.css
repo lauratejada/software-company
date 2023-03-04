@@ -35,6 +35,10 @@ body {
 /* HEADER                           */
 /* ------------------------------- */
 
+main {
+    height: auto;
+}
+
 header {
     position: fixed;
     left: 0;
@@ -186,7 +190,6 @@ nav ul li a:hover {
 /* ------------------------------- */
 
 main {
-    height: calc(100vh + 120px);
     overflow: auto;
 }
 
@@ -220,13 +223,13 @@ main {
 }
 
 h1.h-title {
-    font-size: 60px;
+    font-size: 45px;
     font-weight: 800;
     color: var(--app-body-background-color);
 }
 
 .about-text {
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 500;
     margin-top: 15px;
 }
@@ -268,13 +271,13 @@ h1.h-title {
     place-items: center;
 }
 
-.fa-brands, .fa-solid {
+#icon1, .fa-solid {
     font-size: 24px;
     transition: all 0.25s ease-in-out;
     color: var(--app-button-text-color);
 }
 
-.fa-brands:hover, .fa-solid:hover {
+#icon1:hover, .fa-solid:hover {
     font-size: 30px;
     color: var(--app-button-hover-text-color);
 }
@@ -332,7 +335,6 @@ h1.h-title {
 }
 
 }
-
 
 
 /* ------------------------------- */
@@ -408,4 +410,131 @@ footer .copy p {
     footer .col ~ .col {
         margin-top: 25px;
     }    
+}
+
+
+
+
+/* ------------------------------- */
+/* MAIN-CONTACT ME                 */
+/* ------------------------------- */
+
+
+#contact-us{
+    background: rgba(236, 236, 236, 0.9);
+    padding: 80px 0;
+    height: auto;
+}
+
+#contact-us .col-bg {
+    height: auto;
+    padding: 30px;
+    animation: trans 0.5s ease-in;
+    animation-delay: 0.1s; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#contact-us .col-1 {
+    width: calc(50% - 10px);
+}
+
+#contact-us .col-2 {
+    width: calc(50% - 10px);
+    padding-left: 20px;
+}
+
+#contact-us.col-2 > div {
+    padding-bottom: 20px;
+}
+
+#contact-us p {
+    text-align: left;
+    word-spacing: 5px; 
+    letter-spacing: 0.2px; 
+    line-height: 40px;
+   /* font-size: 18px;*/
+}
+
+#contact-us h1 {
+    margin-top: 40px;
+
+}
+
+#icon2, #icon3 {
+    font-size: 18px;
+    color: var(--app-button-background-color);
+    transition: all 0.25s ease-in-out;
+}
+
+#contact-us p a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#contact-us p a:hover {
+    color: var(--app-button-hover-font-color);
+}
+
+
+
+
+@media (max-width:768px) {
+    #contact-us .col-1, .section-3 .col-2  {
+        width: 100%;
+        padding: 0px;
+    }
+}
+
+@media (max-width: 480px) {
+    #contact-us .col-1, .section-3 .col-2  {
+        width: 100%;
+        padding: 0px;
+    }
+}
+
+#contact-us form {
+    font-size: 0;
+    width: 100%;
+}
+
+input[type=text] {
+    width: 100%;
+    height: 46px;
+    border: 1px solid;
+    border-color: rgb(218, 225, 227);
+    border-radius: 5px;
+    font-weight: 400;
+    margin: 10px 0px;
+    padding-left: 10px;
+    font-size: 16px;
+}
+
+input[type=text]:focus, input[type=text]:hover {
+    border-color: var(--app-button-hover-font-color);
+}
+
+input[type=button] {
+    margin: 10px 0px;
+    width: auto; 
+    height: 46px;
+    text-align: center;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+    padding: 0px 35px;
+    color: var(--app-button-font-color);
+    background-color: var(--app-button-color);
+    transition: border-color 0.25s ease-in-out;
+    box-shadow: 0px 2px 8px rgba(213, 207, 207, 0.658);
+    border: 2px solid;
+    border-color: var(--app-button-hover-font-color);
+}
+
+input[type=button]:hover {
+    color: var(--app-button-hover-font-color);
+    background-color: var(--app-button-hover-color);
 }
