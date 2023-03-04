@@ -3,10 +3,12 @@
 :root {
     --app-body-background-color: #fff;
     --app-body-text-color: #565656; 
+    --app-body-box-shadow: 0 0.275rem 1.25rem rgb(11 15 25 / 5%), 0 0.25rem 0.5625rem rgb(11 15 25 / 3%);
     --app-gray-section: #f3f6ff;
     --app-title-color: #0b0f19;
     --app-header-background-color: #fff;
     --app-header-text-color: #0b0f19;
+    --app-header-menu-text-color: #33354d;
     --app-button-background-color: #6366f1;
     --app-button-text-color: #fff;
     --app-button-hover-background-color: #fff;
@@ -33,8 +35,151 @@ body {
 /* HEADER                           */
 /* ------------------------------- */
 
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color:var(--app-header-background-color);
+    height: 76px;
+    width: 100%;
+}
 
+header .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+header .title {
+    line-height: 76px;
+    text-align: center;
+    vertical-align:middle;
+    color: var(--app-header-text-color);
+    text-decoration: none;
+}
+
+header .title h1 {
+    color: var(--app-header-text-color);
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+    line-height: 76px;
+    margin-left: 5px;
+}
+
+nav {
+    transition: all 0.25s ease-out;
+}
+
+nav ul li {
+    display: inline;
+    line-height: 76px;
+}
+
+nav ul li a, .navbar i {
+    color: var(--app-header-menu-text-color);
+    /*line-height: 76px;*/
+    font-size: 17px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 0.2px;
+    transition: all 0.25s ease-in-out;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.navbar i {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 76px;
+}
+
+nav ul li a:hover { 
+    color: var(--app-button-hover-text-color);
+}
+
+.scrolled {
+    animation: all .25s ease-in-out;
+    box-shadow: var(--app-body-box-shadow);
+}
+
+@media (max-width:768px) {
+
+    .show-nav {
+        position: absolute;
+        top: 0px;
+        right: 0;
+        background-color: var(--app-header-background-color);
+        box-shadow: var(--app-body-box-shadow);
+        z-index: 100;
+        width: 250px;
+        height: 100vh;
+    }
+
+    nav > ul {
+        display: none;
+    }
+
+    .navbar {
+        display: block;
+        text-align: right;
+    }
+
+    nav ul li {
+        text-align: right;  
+        line-height: 46px;
+    }
+
+    nav ul li ~ li {
+        border-top: 1px solid rgba(250, 250, 250, 0.8);
+    }
+
+    nav ul li a:hover {
+        border-bottom: none;
+    }
+
+    .show-menu-responsive {
+        position: relative;
+        top: 0px;
+        right: 0px;
+        background-color: #fff;
+        border-top: 1px solid rgb(92 92 92 / 20%);
+        z-index: 100;
+        width: 250px;
+    }
+
+    .background-opacity-nav-open {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 99;
+        width: 100vw;
+        height: 100vh;
+        background-color: #000;
+        opacity: 0.5;
+    }
+
+    .show {
+        display: grid;
+    }
+
+    .not-show {
+        display: none;
+    }
+}
+
+@media (min-width:768px) {
+    nav > ul {
+        display: block;
+    }
+    .navbar {
+        display: none;
+    }  
+    
+    .background-opacity-nav-open {
+        display: none;
+    }
+}
 
 /* ------------------------------- */
 /* MAIN - HERO BANNER              */
