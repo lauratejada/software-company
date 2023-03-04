@@ -44,7 +44,7 @@ header {
     width: 100%;
 }
 
-.flex {
+header .flex {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -67,6 +67,10 @@ header .title h1 {
     margin-left: 5px;
 }
 
+nav {
+    transition: all 0.25s ease-out;
+}
+
 nav ul li {
     display: inline;
     line-height: 76px;
@@ -74,7 +78,7 @@ nav ul li {
 
 nav ul li a, .navbar i {
     color: var(--app-header-menu-text-color);
-    line-height: 76px;
+    /*line-height: 76px;*/
     font-size: 17px;
     font-weight: 500;
     text-decoration: none;
@@ -87,6 +91,7 @@ nav ul li a, .navbar i {
 .navbar i {
     font-size: 20px;
     font-weight: 600;
+    line-height: 76px;
 }
 
 nav ul li a:hover { 
@@ -99,21 +104,34 @@ nav ul li a:hover {
 }
 
 @media (max-width:768px) {
+
+    .show-nav {
+        position: absolute;
+        top: 0px;
+        right: 0;
+        background-color: var(--app-header-background-color);
+        box-shadow: var(--app-body-box-shadow);
+        z-index: 100;
+        width: 250px;
+        height: 100vh;
+    }
+
     nav > ul {
         display: none;
     }
 
-    .navbar:first-child {
+    .navbar {
         display: block;
         text-align: right;
     }
 
     nav ul li {
         text-align: right;  
+        line-height: 46px;
     }
 
     nav ul li ~ li {
-        border-top: 1px solid rgba(250, 250, 250, 0.1);
+        border-top: 1px solid rgba(250, 250, 250, 0.8);
     }
 
     nav ul li a:hover {
@@ -121,10 +139,24 @@ nav ul li a:hover {
     }
 
     .show-menu-responsive {
-        position: absolute;
-        top: 50px;
+        position: relative;
+        top: 0px;
+        right: 0px;
+        background-color: #fff;
+        border-top: 1px solid rgb(92 92 92 / 20%);
+        z-index: 100;
+        width: 250px;
+    }
+
+    .background-opacity-nav-open {
+        position: fixed;
+        top: 0;
         left: 0;
-        right: 0;
+        z-index: 99;
+        width: 100vw;
+        height: 100vh;
+        background-color: #000;
+        opacity: 0.5;
     }
 
     .show {
@@ -142,7 +174,11 @@ nav ul li a:hover {
     }
     .navbar {
         display: none;
-    }    
+    }  
+    
+    .background-opacity-nav-open {
+        display: none;
+    }
 }
 
 /* ------------------------------- */
