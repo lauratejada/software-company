@@ -185,124 +185,6 @@ nav ul li a:hover {
 /* MAIN - HERO BANNER              */
 /* ------------------------------- */
 
-main {
-    height: calc(100vh + 120px);
-    overflow: auto;
-}
-
-#hero-banner {
-    background: rgba(168, 168, 168, 1) url("../images/hero-banner.jpg") center center / cover no-repeat;
-    height: 100vh; 
-    text-align: center; 
-    overflow: hidden; 
-    display: grid;
-    place-items: center;   
-    background-blend-mode: multiply; 
-}
-
-.content {
-    display: grid;
-    place-items: center;
-    text-align: center;
-    justify-content: center;
-    place-content: center;
-}
-
-.h-text {
-    display: grid;
-    text-align: center;
-    justify-content: center;
-    display: grid;
-    text-align: center;
-    color: var(--app-gray-section);
-}
-
-.h-title {
-    font-size: 55px;
-    font-weight: 800;
-    color: var(--app-body-background-color);
-}
-
-.about-text {
-    font-size: 22px;
-    font-weight: 500;
-    margin-top: 15px;
-}
-
-button {
-    width: 200px;
-    height: 55px;
-    text-align: center;
-    background-color: var(--app-button-background-color);
-    border-radius: 10px;
-    transition: all 0.25s ease-in-out;
-    box-shadow: 2px 2px 2px rgb(0 0 0 / 0.1);
-    margin-top: 20px;
-    margin-bottom: 15px;
-    text-decoration: none;
-    letter-spacing: 0.2px;
-    font-weight: 600;
-    font-size: 16px;
-    color: var(--app-button-text-color);
-    transition: all 0.25s ease-in-out;
-  }
-  
-button:hover {
-    background-color: var(--app-button-hover-background-color);
-    color: var(--app-button-hover-text-color);
-    cursor: pointer;
-}
-
-button a:hover {
-    color: var(--app-button-hover-text-color);
-}
-
-.n-index a {
-    position:left;
-    color: var(--app-body-background-color);
-}
-
-.nav-media {
-    display:flex;
-    text-align: left;
-    justify-content: space-between;
-}
-
-
-
-@media (min-width:768px) {
-
-.container {
-    width: 100%;
-}
-
-.h-title {
-    font-size: 40px;
-}
-
-.about-text {
-    font-size: 20px;
-}
-
-}
-
-@media (max-width:768px) {
-
-.container {
-    width: 100%;
-}
-
-.h-title {
-    font-size: 30px;
-}
-
-.about-text {
-    font-size: 20px;
-}
-
-}
-
-
 
 /* ------------------------------- */
 /* MAIN - SERVCES                  */
@@ -315,12 +197,12 @@ button a:hover {
     background-color: var(--app-gray-section);
   }
 
-  .row {
+  .vertical {
     display: flex;
     flex-wrap: wrap;
   }
 
-  .cols {
+  .horizontal {
     width: 100%;
     padding: 0 1em 1em 1em;
     text-align: center;
@@ -362,7 +244,7 @@ button a:hover {
   }
 
 
-  .cols .board-para {
+  .horizontal .board-para {
     color: var(--app-body-text-color);
     font-size: 15px;
     line-height: 1.6;
@@ -404,7 +286,7 @@ button a:hover {
     section {
       padding: 0 2em;
     }
-    .cols {
+    .horizontal {
       flex: 0 50%;
       max-width: 50%;
     }
@@ -413,12 +295,11 @@ button a:hover {
     section {
       padding: 1em 3em;
     }
-    .cols {
+    .horizontal {
       flex: 0 0 33.33%;
       max-width: 33.33%;
     }
   }
-
 
 /* ------------------------------- */
 /* FOOTER                           */
