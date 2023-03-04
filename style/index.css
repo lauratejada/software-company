@@ -192,6 +192,7 @@ main {
 
 #hero-banner {
     background: rgba(168, 168, 168, 1) url("../images/hero-banner.jpg") center center / cover no-repeat;
+    background-attachment: fixed;
     height: 100vh; 
     text-align: center; 
     overflow: hidden; 
@@ -201,7 +202,8 @@ main {
 }
 
 .content {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     place-items: center;
     text-align: center;
     justify-content: center;
@@ -209,16 +211,16 @@ main {
 }
 
 .h-text {
-    display: grid;
-    text-align: center;
-    justify-content: center;
-    display: grid;
-    text-align: center;
+    display: flex;
+    place-content: center;
+    width: min(100% - 100px, 1080px);
+    height: 700px;
     color: var(--app-gray-section);
+    margin: auto;
 }
 
-.h-title {
-    font-size: 55px;
+h1.h-title {
+    font-size: 60px;
     font-weight: 800;
     color: var(--app-body-background-color);
 }
@@ -229,32 +231,26 @@ main {
     margin-top: 15px;
 }
 
-button {
+.h-button {
     width: 200px;
     height: 55px;
     text-align: center;
-    background-color: var(--app-button-background-color);
-    border-radius: 10px;
-    transition: all 0.25s ease-in-out;
-    box-shadow: 2px 2px 2px rgb(0 0 0 / 0.1);
-    margin-top: 20px;
-    margin-bottom: 15px;
     text-decoration: none;
     letter-spacing: 0.2px;
     font-weight: 600;
     font-size: 16px;
+    border-radius: 10px;
+    margin-top: 40px;
+    box-shadow: 2px 2px 2px rgb(0 0 0 / 0.1);
     color: var(--app-button-text-color);
+    background-color: var(--app-button-background-color);
     transition: all 0.25s ease-in-out;
   }
   
-button:hover {
+.h-button:hover {
     background-color: var(--app-button-hover-background-color);
     color: var(--app-button-hover-text-color);
     cursor: pointer;
-}
-
-button a:hover {
-    color: var(--app-button-hover-text-color);
 }
 
 .n-index a {
@@ -262,18 +258,53 @@ button a:hover {
     color: var(--app-body-background-color);
 }
 
-.nav-media {
+
+.nav-media { 
+    height: 50px;
     display:flex;
     text-align: left;
     justify-content: space-between;
+    position: center;
+    place-items: center;
 }
+
+.fa-brands, .fa-solid {
+    font-size: 24px;
+    transition: all 0.25s ease-in-out;
+    color: var(--app-button-text-color);
+}
+
+.fa-brands:hover, .fa-solid:hover {
+    font-size: 30px;
+    color: var(--app-button-hover-text-color);
+}
+
+
+.btn-media + .btn-media {
+    margin-left: 15px;
+}
+
+.nav-contact a {
+    color: var(--app-button-text-color);
+    text-decoration: none;
+    font-size: 18px;
+    transition: all 0.25s ease-in-out;
+}
+
+.nav-contact a:hover {
+    font-size: 20px;
+    color: var(--app-button-hover-text-color);
+}
+
+
+
 
 
 
 @media (min-width:768px) {
 
-.container {
-    width: 100%;
+.content {
+    min-width: 700px;
 }
 
 .h-title {
@@ -288,8 +319,8 @@ button a:hover {
 
 @media (max-width:768px) {
 
-.container {
-    width: 100%;
+.content{
+    min-width: 500;
 }
 
 .h-title {
