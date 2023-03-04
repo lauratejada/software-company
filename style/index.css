@@ -283,7 +283,7 @@ nav ul li a:hover {
   }
 
   @media screen and (min-width: 768px) {
-    section {
+    #our-services {
       padding: 0 2em;
     }
     .horizontal {
@@ -292,7 +292,7 @@ nav ul li a:hover {
     }
   }
   @media screen and (min-width: 992px) {
-    section {
+    #our-services {
       padding: 1em 3em;
     }
     .horizontal {
