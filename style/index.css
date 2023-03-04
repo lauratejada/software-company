@@ -185,6 +185,10 @@ nav ul li a:hover {
 /* MAIN - HERO BANNER              */
 /* ------------------------------- */
 
+main {
+    height: calc(100vh + 120px);
+    overflow: auto;
+}
 
 
 
@@ -197,3 +201,68 @@ nav ul li a:hover {
 /* ------------------------------- */
 /* FOOTER                           */
 /* ------------------------------- */
+
+footer {
+    width: 100%;
+    background-color: var(--app-footer-background-color);
+    color: var(--app-footer-text-color);
+    padding: 50px 0px;
+}
+
+footer .title {
+    line-height: 50px; 
+    display: flex;
+}
+
+footer .title h1 {
+    margin-left: 10px;
+    font-size: 22px;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--app-footer-text-color);
+    line-height: 40px;
+}
+
+footer a:hover {
+    color: var(--app-button-hover-text-color);
+}
+
+footer .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0px;
+}
+
+footer .col {
+    width: calc(33% - 0px);
+}
+
+footer .copy p {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+@media (max-width:768px) {
+    footer .col  {
+        width: 100%;
+        padding: 0px;
+    }
+
+    footer .col ~ .col {
+        margin-top: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    footer .col  {
+        width: 100%;
+        padding: 0px;
+    }
+
+    footer .col ~ .col {
+        margin-top: 25px;
+    }    
+}
