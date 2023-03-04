@@ -421,7 +421,7 @@ footer .copy p {
 
 
 #contact-us{
-    background: rgba(236, 236, 236, 0.9);
+    background-color: var(--app-gray-section);
     padding: 80px 0;
     height: auto;
 }
@@ -429,8 +429,6 @@ footer .copy p {
 #contact-us .col-bg {
     height: auto;
     padding: 30px;
-    animation: trans 0.5s ease-in;
-    animation-delay: 0.1s; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -442,7 +440,7 @@ footer .copy p {
 
 #contact-us .col-2 {
     width: calc(50% - 10px);
-    padding-left: 20px;
+    padding-left: 40px;
 }
 
 #contact-us.col-2 > div {
@@ -454,12 +452,10 @@ footer .copy p {
     word-spacing: 5px; 
     letter-spacing: 0.2px; 
     line-height: 40px;
-   /* font-size: 18px;*/
 }
 
 #contact-us h1 {
     margin-top: 40px;
-
 }
 
 #icon2, #icon3 {
@@ -474,21 +470,21 @@ footer .copy p {
 }
 
 #contact-us p a:hover {
-    color: var(--app-button-hover-font-color);
+    color: var(--app-button-hover-text-color);
 }
 
 
 
 
 @media (max-width:768px) {
-    #contact-us .col-1, .section-3 .col-2  {
+    #contact-us .col-1, #contact-us.col-2  {
         width: 100%;
         padding: 0px;
     }
 }
 
 @media (max-width: 480px) {
-    #contact-us .col-1, .section-3 .col-2  {
+    #contact-us .col-1, #contact-us .col-2  {
         width: 100%;
         padding: 0px;
     }
@@ -499,7 +495,7 @@ footer .copy p {
     width: 100%;
 }
 
-input[type=text] {
+.contact-input {
     width: 100%;
     height: 46px;
     border: 1px solid;
@@ -511,11 +507,11 @@ input[type=text] {
     font-size: 16px;
 }
 
-input[type=text]:focus, input[type=text]:hover {
-    border-color: var(--app-button-hover-font-color);
+.contact-input:focus, .contact-input:hover {
+    border-color: var(--app-button-hover-text-color);
 }
 
-input[type=button] {
+.send-btn {
     margin: 10px 0px;
     width: auto; 
     height: 46px;
@@ -526,15 +522,15 @@ input[type=button] {
     letter-spacing: 0.2px;
     text-transform: uppercase;
     padding: 0px 35px;
-    color: var(--app-button-font-color);
-    background-color: var(--app-button-color);
+    color: var(--app-button-text-color);
+    background-color: var(--app-button-background-color);
     transition: border-color 0.25s ease-in-out;
     box-shadow: 0px 2px 8px rgba(213, 207, 207, 0.658);
     border: 2px solid;
-    border-color: var(--app-button-hover-font-color);
+    border-color: var(--app-button-background-color);
 }
 
-input[type=button]:hover {
-    color: var(--app-button-hover-font-color);
-    background-color: var(--app-button-hover-color);
+.send-btn:hover {
+    color: var(--app-button-hover-text-color);
+    background-color: var(--app-button-hover-background-color);
 }
