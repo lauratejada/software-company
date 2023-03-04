@@ -517,10 +517,12 @@ footer .copy p {
 
 #contact-us .col-1 {
     width: calc(50% - 10px);
+    max-height: 400px;
 }
 
 #contact-us .col-2 {
     width: calc(50% - 10px);
+    max-height: 400px;
     padding-left: 40px;
 }
 
@@ -611,4 +613,17 @@ footer .copy p {
 .send-btn:hover {
     color: var(--app-button-hover-text-color);
     background-color: var(--app-button-hover-background-color);
+}
+
+.invalid-feedback {
+    height: 14px;
+    color: #ef1c1c;
+    font-size: 12px;
+    display: none;
+}
+
+.submit-feedback {
+    height: 14px;
+    font-size: 14px;
+    display: none;
 }
