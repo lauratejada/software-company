@@ -222,7 +222,7 @@ nav ul li a:hover {
 }
 
 h1.h-title {
-    font-size: 45px;
+    font-size: 35px;
     font-weight: 800;
     color: var(--app-body-background-color);
 }
@@ -314,6 +314,10 @@ h1.h-title {
     background-color: var(--app-gray-section);
     padding: 50px 0;
   }
+
+#our-services h1 {
+    color: var(--app-title-color);
+}
 
   .vertical {
     display: flex;
@@ -529,19 +533,28 @@ footer .copy p {
     flex-grow: 1 1 auto;
 }
 
+#contact-us .col-2 p {
+    line-height: 40px;
+}
+
 #contact-us.col-2 > div {
     padding-bottom: 20px;
 }
 
 #contact-us p {
     text-align: left;
-    word-spacing: 5px; 
-    letter-spacing: 0.2px; 
-    
+    letter-spacing: 0.03em; 
+    line-height: 1.6;
+    margin-left: 40px;
 }
 
 #contact-us h1 {
+    font-size: 30px;
+    font-weight: 800;
     margin-top: 40px;
+    text-align: center;
+    color: var(--app-title-color);
+    margin-bottom: 15px;
 }
 
 #icon2, #icon3 {
@@ -607,22 +620,23 @@ footer .copy p {
 }
 
 .send-btn {
-    margin: 10px 0px;
-    width: auto; 
-    height: 46px;
+    width: 200px; 
+    height: 55px;
     text-align: center;
-    border-radius: 50px;
-    font-size: 14px;
+    border-radius: 10px;
+    font-size: 16px;
     font-weight: 600;
     letter-spacing: 0.2px;
     text-transform: uppercase;
     padding: 0px 35px;
     color: var(--app-button-text-color);
     background-color: var(--app-button-background-color);
-    transition: border-color 0.25s ease-in-out;
-    box-shadow: 0px 2px 8px rgba(213, 207, 207, 0.658);
+    box-shadow: 2px 2px 2px rgb(0 0 0 / 0.1);
     border: 2px solid;
     border-color: var(--app-button-background-color);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    transition: all 0.25s ease-in-out; 
 }
 
 .send-btn:hover {
@@ -656,7 +670,7 @@ footer .copy p {
     width: 100%;
     text-align: center;
     font-size: 30px;
-    color: var(--app-body-text-color);
+    color: var(--app-title-color);
   }
 
   .card {
@@ -720,7 +734,12 @@ footer .copy p {
     .intros {
       padding: 1em 7em;
     }
+    .send-btn {
+        margin-top: 15px;
+        margin-bottom: 15px;
   }
+}
+
   @media screen and (min-width: 992px) {
     .intros {
       padding: 1em;
@@ -733,4 +752,10 @@ footer .copy p {
       max-width: 33.33%;
       padding: 0 1em;
     }
+
+    .send-btn {
+        margin-top: 15px;
+        margin-bottom: 15px;
+  }
+
   }
