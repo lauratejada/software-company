@@ -49,29 +49,33 @@ const messageEmail = document.querySelector('.f-email');
 const messageSubmit = document.querySelector('.submit-feedback');
 
 //Validating data
+console.log();
+
 
 sendBtn.addEventListener('click', () => {
-    console.log(contactName.value.trim());
 
-    if (contactName.value.trim() <= 0) {
+    if (contactName.value.trim() <= 0 ) {
         messageName.style.display = 'block'
          } else { messageName.style.display = 'none';
      }
 
-    if (contactPhone.value.trim() <= 0 && messagePhone.style.display) {
+    if (contactPhone.value.trim() <= 0 ) {
         messagePhone.style.display = 'block'
         } else { messagePhone.style.display = 'none';
     }
     
-    if (contactEmail.value.trim() <= 0 && messageEmail.style.display) {
+    if (contactEmail.value.trim() <= 0 ) {
         messageEmail.style.display = 'block'
-        } else { messagePhone.style.display = 'none';
-    }
+        } else { messageEmail.style.display = 'none';
+    } 
 
-    if (contactEmail.value.trim() <= 0 && messageEmail.style.display) {
-        messageEmail.style.display = 'block'
-        } else { messagePhone.style.display = 'none' 
-        }
+
+
+    if (contactName.value.trim() ) {
+        messageSubmit.style.display = 'block'
+    }  else { messageSubmit.style.display = 'none';
+}
+
 })
 
 
