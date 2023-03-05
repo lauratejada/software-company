@@ -534,17 +534,20 @@ footer .copy p {
     height: auto;
     padding: 30px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 }
 
 #contact-us .col-1 {
     width: calc(50% - 10px);
+    flex-grow: 1 1 auto;
 }
 
 #contact-us .col-2 {
     width: calc(50% - 10px);
     padding-left: 40px;
+    flex-grow: 1 1 auto;
 }
 
 #contact-us.col-2 > div {
@@ -578,7 +581,7 @@ footer .copy p {
 }
 
 @media (max-width:768px) {
-    #contact-us .col-1, #contact-us.col-2  {
+    #contact-us .col-1, #contact-us .col-2  {
         width: 100%;
         padding: 0px;
     }
