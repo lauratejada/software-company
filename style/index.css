@@ -46,7 +46,7 @@ header {
     background-color:var(--app-header-background-color);
     height: 76px;
     width: 100%;
-    z-index: 98;
+    z-index: 95;
 }
 
 header .flex {
