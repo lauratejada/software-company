@@ -556,11 +556,13 @@ footer .copy p {
 .submit-feedback {
     color: var(--app-body-text-color);
     display: none;
+    font-size: 14px;
 }
 
 .invalid-feedback {
     color: #ff0000;
     display: none;
+    font-size: 14px;
 }
 
 @media (max-width:768px) {
