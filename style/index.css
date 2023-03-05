@@ -537,7 +537,7 @@ footer .copy p {
     text-align: left;
     word-spacing: 5px; 
     letter-spacing: 0.2px; 
-    line-height: 40px;
+    
 }
 
 #contact-us h1 {
@@ -562,11 +562,13 @@ footer .copy p {
 .submit-feedback {
     color: var(--app-body-text-color);
     display: none;
+    font-size: 14px;
 }
 
 .invalid-feedback {
     color: #ff0000;
     display: none;
+    font-size: 14px;
 }
 
 @media (max-width:768px) {
