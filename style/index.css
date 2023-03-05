@@ -370,8 +370,7 @@ h1.h-title {
     font-size: 30px;
     font-weight: 800;
     color: var(--app-title-color);
-    margin: 1em 0;
-    padding-left: 60vh;
+    text-align: center;
   } 
 
   .service-para{
@@ -640,7 +639,8 @@ footer .copy p {
 /* ------------------------------- */
 
 .intros{
-    background-color: var(--app-gray-section);
+    background-color: var(--app-header-background-color);
+    padding: 50px 0;
 }
 
 .rows {
@@ -658,7 +658,7 @@ footer .copy p {
   h1 {
     width: 100%;
     text-align: center;
-    font-size: 3.5em;
+    font-size: 30px;
     color: var(--app-body-text-color);
   }
   .card {
