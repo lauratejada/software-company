@@ -46,6 +46,7 @@ header {
     background-color:var(--app-header-background-color);
     height: 76px;
     width: 100%;
+    z-index: 98;
 }
 
 header .flex {
@@ -189,8 +190,6 @@ nav ul li a:hover {
 /* MAIN - HERO BANNER              */
 /* ------------------------------- */
 
-
-
 #hero-banner {
     background: rgba(168, 168, 168, 1) url("../images/hero-banner.jpg") center center / cover no-repeat;
     background-attachment: fixed;
@@ -279,7 +278,6 @@ h1.h-title {
     color: var(--app-button-hover-text-color);
 }
 
-
 .btn-media + .btn-media {
     margin-left: 15px;
 }
@@ -298,39 +296,37 @@ h1.h-title {
 
 @media (min-width:768px) {
 
-.content {
-    min-width: 700px;
-}
+    .content {
+        min-width: 700px;
+    }
 
-.h-title {
-    font-size: 40px;
-}
+    .h-title {
+        font-size: 40px;
+    }
 
-.about-text {
-    font-size: 20px;
-}
+    .about-text {
+        font-size: 20px;
+    }
 
 }
 
 @media (max-width:768px) {
 
-.content{
-    min-width: 500;
-}
+    .content{
+        min-width: 500;
+    }
 
-.h-title {
-    font-size: 30px;
-}
+    .h-title {
+        font-size: 30px;
+    }
 
-.about-text {
-    font-size: 20px;
+    .about-text {
+        font-size: 20px;
+    }
 }
-
-}
-
 
 /* ------------------------------- */
-/* MAIN - SERVCES                  */
+/* MAIN - SERVICES                  */
 /* ------------------------------- */
 
 #our-services {
@@ -338,20 +334,20 @@ h1.h-title {
     display: grid;
     place-items: center;
     background-color: var(--app-gray-section);
-  }
+}
 
-  .vertical {
+.vertical {
     display: flex;
     flex-wrap: wrap;
-  }
+}
 
-  .horizontal {
+.horizontal {
     width: 100%;
     padding: 0 1em 1em 1em;
     text-align: center;
-  }
+}
 
-  .board {
+.board {
     width: 100%;
     height: 100%;
     padding: 2em 1.5em;
@@ -362,39 +358,38 @@ h1.h-title {
     box-shadow: 0 0 35px rgba(0, 0, 0, 0.12);
     cursor: pointer;
     transition: 0.5s;
-  }
+}
 
-  .section-heading {
+.section-heading {
     font-size: 30px;
     font-weight: 800;
     color: var(--app-title-color);
     margin: 1em 0;
-  } 
+} 
 
-  .service-para{
+.service-para {
     color: var(--app-body-text-color);
     font-size: 15px;
     line-height: 1.6;
     letter-spacing: 0.03em;
     padding-left: 30px;
-  }
+}
 
-  .board-heading {
+.board-heading {
     font-size: 20px;
     font-weight: 600;
     color: var(--app-title-color);
     margin: 1em 0;
-  }
+}
 
-
-  .horizontal .board-para {
+.horizontal .board-para {
     color: var(--app-body-text-color);
     font-size: 15px;
     line-height: 1.6;
     letter-spacing: 0.03em;
-  }
+}
   
-  .ikon-wrapper {
+.ikon-wrapper {
     background-color: var(--app-button-background-color);
     position: relative;
     margin: auto;
@@ -406,100 +401,49 @@ h1.h-title {
     display: grid;
     place-items: center;
     transition: 0.5s;
-  }
+}
 
-  .board:hover {
+.board:hover {
     background-position: 0 100%;
-  }
+}
   
-  .board:hover .ikon-wrapper {
+.board:hover .ikon-wrapper {
     background-color: #ffffff;
     color: var(--app-button-hover-text-color);
-  }
+}
 
-  .board:hover .board-heading {
+.board:hover .board-heading {
     color: #ffffff;
-  }
+}
 
-  .board:hover p {
+.board:hover p {
     color: #f0f0f0;
-  }
-
-
-/* ------------------------------- */
-/* FOOTER                           */
-/* ------------------------------- */
-
-footer {
-    width: 100%;
-    background-color: var(--app-footer-background-color);
-    color: var(--app-footer-text-color);
-    padding: 50px 0px;
 }
 
-footer .title {
-    line-height: 50px; 
-    display: flex;
+@media screen and (min-width: 768px) {
+	#our-services {
+	padding: 0 2em;
+	}
+
+    .horizontal { 
+        flex: 0 50%;
+         max-width: 50%;
+    } 
 }
-
-footer .title h1 {
-    margin-left: 10px;
-    font-size: 22px;
-}
-
-footer a {
-    text-decoration: none;
-    color: var(--app-footer-text-color);
-    line-height: 40px;
-}
-
-footer a:hover {
-    color: var(--app-button-hover-text-color);
-}
-
-footer .row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0px;
-}
-
-footer .col {
-    width: calc(33% - 0px);
-}
-
-footer .copy p {
-    font-size: 16px;
-    font-weight: 400;
-}
-
-
-@media (max-width:768px) {
-    footer .col  {
-        width: 100%;
-        padding: 0px;
+    
+ @media screen and (min-width: 992px) {
+    #our-services {
+        padding: 1em 3em;
     }
-
-    footer .col ~ .col {
-        margin-top: 25px;
+    .horizontal {
+        flex: 0 0 33.33%;
+        max-width: 33.33%;
     }
 }
-
-@media (max-width: 480px) {
-    footer .col  {
-        width: 100%;
-        padding: 0px;
-    }
-
-    footer .col ~ .col {
-        margin-top: 25px;
-    }    
-}
-
 
 /* ------------------------------- */
 /* MAIN-CONTACT ME                 */
 /* ------------------------------- */
-
 
 #contact-us{
     background-color: var(--app-gray-section);
@@ -627,3 +571,73 @@ footer .copy p {
     font-size: 14px;
     display: none;
 }
+
+/* ------------------------------- */
+/* FOOTER                           */
+/* ------------------------------- */
+
+footer {
+    width: 100%;
+    background-color: var(--app-footer-background-color);
+    color: var(--app-footer-text-color);
+    padding: 50px 0px;
+}
+
+footer .title {
+    line-height: 50px; 
+    display: flex;
+}
+
+footer .title h1 {
+    margin-left: 10px;
+    font-size: 22px;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--app-footer-text-color);
+    line-height: 40px;
+}
+
+footer a:hover {
+    color: var(--app-button-hover-text-color);
+}
+
+footer .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0px;
+}
+
+footer .col {
+    width: calc(33% - 0px);
+}
+
+footer .copy p {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+@media (max-width:768px) {
+    footer .col  {
+        width: 100%;
+        padding: 0px;
+    }
+
+    footer .col ~ .col {
+        margin-top: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    footer .col  {
+        width: 100%;
+        padding: 0px;
+    }
+
+    footer .col ~ .col {
+        margin-top: 25px;
+    }    
+}
+
