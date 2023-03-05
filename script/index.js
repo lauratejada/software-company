@@ -49,9 +49,6 @@ const messageEmail = document.querySelector('.f-email');
 const messageSubmit = document.querySelector('.submit-feedback');
 
 //Validating data
-console.log();
-
-
 sendBtn.addEventListener('click', () => {
 
     if (contactName.value.trim() <= 0 ) {
@@ -77,8 +74,3 @@ sendBtn.addEventListener('click', () => {
 }
 
 })
-
-
- 
-
-
