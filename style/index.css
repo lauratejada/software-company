@@ -425,7 +425,6 @@ h1.h-title {
     color: #f0f0f0;
   }
 
-
 /* ------------------------------- */
 /* FOOTER                           */
 /* ------------------------------- */
@@ -612,3 +611,98 @@ footer .copy p {
     color: var(--app-button-hover-text-color);
     background-color: var(--app-button-hover-background-color);
 }
+
+/* ------------------------------- */
+/* Introduction                    */
+/* ------------------------------- */
+
+.intros{
+    background-color: var(--app-gray-section);
+}
+
+.rows {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2em 1em;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .columns {
+    width: 100%;
+    padding: 0.5em 0;
+  }
+  h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 3.5em;
+    color: var(--app-body-text-color);
+  }
+  .card {
+    height: 60vh;
+    box-shadow: 0 0 2.4em rgba(25, 0, 58, 0.1);
+    padding: 3.5em 1em;
+    border-radius: 0.6em;
+    color: var(--app-body-text-color);
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: #ffffff;
+  }
+  .card .img-container {
+    width: 8em;
+    height: 8em;
+    background-color: var(--app-button-background-color);
+    padding: 0.5em;
+    border-radius: 50%;
+    margin: 0 auto 2em auto;
+  }
+  .card img {
+    width: 100%;
+    border-radius: 50%;
+  }
+  .card h3 {
+    font-weight: 500;
+  }
+  .card p {
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 0.5em 0 2em 0;
+    letter-spacing: 2px;
+  }
+  
+  .icons {
+    height: 60px;
+    width: 180px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .card a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.4em;
+  }
+  .card:hover {
+    background: linear-gradient(#33354d, #6366f1);
+    color: #ffffff;
+  }
+
+  @media screen and (min-width: 768px) {
+    section {
+      padding: 1em 7em;
+    }
+  }
+  @media screen and (min-width: 992px) {
+    section {
+      padding: 1em;
+    }
+    .card {
+      padding: 5em 1em;
+    }
+    .columns {
+      flex: 0 0 33.33%;
+      max-width: 33.33%;
+      padding: 0 1em;
+    }
+  }
