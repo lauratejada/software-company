@@ -369,6 +369,7 @@ h1.h-title {
     font-weight: 800;
     color: var(--app-title-color);
     margin: 1em 0;
+    padding-left: 60vh;
   } 
 
   .service-para{
@@ -376,7 +377,7 @@ h1.h-title {
     font-size: 15px;
     line-height: 1.6;
     letter-spacing: 0.03em;
-    padding-left: 30px;
+    padding: 15px 0px 15px 30px;
   }
 
   .board-heading {
@@ -392,6 +393,7 @@ h1.h-title {
     font-size: 15px;
     line-height: 1.6;
     letter-spacing: 0.03em;
+    text-align: justify;
   }
   
   .ikon-wrapper {
