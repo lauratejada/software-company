@@ -375,7 +375,7 @@ h1.h-title {
 
   .service-para{
     color: var(--app-body-text-color);
-    font-size: 15px;
+    font-size: 16px;
     line-height: 1.6;
     letter-spacing: 0.03em;
     padding: 15px 0px 15px 30px;
@@ -391,7 +391,7 @@ h1.h-title {
 
   .horizontal .board-para {
     color: var(--app-body-text-color);
-    font-size: 15px;
+    font-size: 16px;
     line-height: 1.6;
     letter-spacing: 0.03em;
     text-align: justify;
