@@ -191,11 +191,10 @@ nav ul li a:hover {
 /* ------------------------------- */
 
 
-
 #hero-banner {
     background: rgba(168, 168, 168, 1) url("../images/hero-banner.jpg") center center / cover no-repeat;
     background-attachment: fixed;
-    height: 1000px; 
+    height: 100vh;
     text-align: center; 
     overflow: hidden; 
     display: grid;
@@ -216,7 +215,6 @@ nav ul li a:hover {
     display: flex;
     place-content: center;
     width: min(100% - 100px, 1080px);
-    height: 700px;
     color: var(--app-gray-section);
     margin: auto;
 }
@@ -260,13 +258,16 @@ h1.h-title {
     color: var(--app-body-background-color);
 }
 
-.nav-media { 
+.nav-media {
+    position: relative; 
     height: 50px;
-    display:flex;
+    display: flex;
     text-align: left;
     justify-content: space-between;
     position: center;
     place-items: center;
+    line-height: 50px;
+    bottom: 50%;
 }
 
 #icon1, .fa-solid {
@@ -501,7 +502,7 @@ footer .copy p {
 /* ------------------------------- */
 
 
-#contact-us{
+#contact-us {
     background-color: var(--app-gray-section);
     padding: 80px 0;
     height: auto;
@@ -527,15 +528,21 @@ footer .copy p {
     flex-grow: 1 1 auto;
 }
 
+#contact-us .info {
+    margin-left: 40px;
+}
+
 #contact-us .col-2 p {
     line-height: 40px;
 }
 
-#contact-us.col-2 > div {
+
+
+#contact-us .col-2 > div {
     padding-bottom: 20px;
 }
 
-#contact-us p {
+#contact-us .col2 p {
     text-align: left;
     letter-spacing: 0.03em; 
     line-height: 1.6;
@@ -583,12 +590,21 @@ footer .copy p {
         width: 100%;
         padding: 0px;
     }
+
+    #contact-us .col-2  {
+        margin-top: 30px;
+    }
+
 }
 
 @media (max-width: 480px) {
     #contact-us .col-1, #contact-us .col-2  {
         width: 100%;
         padding: 0px;
+    }
+
+    #contact-us .col-2  {
+        margin-top: 30px;
     }
 }
 
