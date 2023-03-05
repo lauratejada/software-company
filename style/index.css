@@ -46,7 +46,6 @@ header {
     background-color:var(--app-header-background-color);
     height: 76px;
     width: 100%;
-    z-index: 95;
 }
 
 header .flex {
@@ -190,6 +189,8 @@ nav ul li a:hover {
 /* MAIN - HERO BANNER              */
 /* ------------------------------- */
 
+
+
 #hero-banner {
     background: rgba(168, 168, 168, 1) url("../images/hero-banner.jpg") center center / cover no-repeat;
     background-attachment: fixed;
@@ -278,6 +279,7 @@ h1.h-title {
     color: var(--app-button-hover-text-color);
 }
 
+
 .btn-media + .btn-media {
     margin-left: 15px;
 }
@@ -296,37 +298,39 @@ h1.h-title {
 
 @media (min-width:768px) {
 
-    .content {
-        min-width: 700px;
-    }
+.content {
+    min-width: 700px;
+}
 
-    .h-title {
-        font-size: 40px;
-    }
+.h-title {
+    font-size: 40px;
+}
 
-    .about-text {
-        font-size: 20px;
-    }
+.about-text {
+    font-size: 20px;
+}
 
 }
 
 @media (max-width:768px) {
 
-    .content{
-        min-width: 500;
-    }
-
-    .h-title {
-        font-size: 30px;
-    }
-
-    .about-text {
-        font-size: 20px;
-    }
+.content{
+    min-width: 500;
 }
 
+.h-title {
+    font-size: 30px;
+}
+
+.about-text {
+    font-size: 20px;
+}
+
+}
+
+
 /* ------------------------------- */
-/* MAIN - SERVICES                  */
+/* MAIN - SERVCES                  */
 /* ------------------------------- */
 
 #our-services {
@@ -334,20 +338,20 @@ h1.h-title {
     display: grid;
     place-items: center;
     background-color: var(--app-gray-section);
-}
+  }
 
-.vertical {
+  .vertical {
     display: flex;
     flex-wrap: wrap;
-}
+  }
 
-.horizontal {
+  .horizontal {
     width: 100%;
     padding: 0 1em 1em 1em;
     text-align: center;
-}
+  }
 
-.board {
+  .board {
     width: 100%;
     height: 100%;
     padding: 2em 1.5em;
@@ -358,38 +362,39 @@ h1.h-title {
     box-shadow: 0 0 35px rgba(0, 0, 0, 0.12);
     cursor: pointer;
     transition: 0.5s;
-}
+  }
 
-.section-heading {
+  .section-heading {
     font-size: 30px;
     font-weight: 800;
     color: var(--app-title-color);
     margin: 1em 0;
-} 
+  } 
 
-.service-para {
+  .service-para{
     color: var(--app-body-text-color);
     font-size: 15px;
     line-height: 1.6;
     letter-spacing: 0.03em;
     padding-left: 30px;
-}
+  }
 
-.board-heading {
+  .board-heading {
     font-size: 20px;
     font-weight: 600;
     color: var(--app-title-color);
     margin: 1em 0;
-}
+  }
 
-.horizontal .board-para {
+
+  .horizontal .board-para {
     color: var(--app-body-text-color);
     font-size: 15px;
     line-height: 1.6;
     letter-spacing: 0.03em;
-}
+  }
   
-.ikon-wrapper {
+  .ikon-wrapper {
     background-color: var(--app-button-background-color);
     position: relative;
     margin: auto;
@@ -401,179 +406,24 @@ h1.h-title {
     display: grid;
     place-items: center;
     transition: 0.5s;
-}
+  }
 
-.board:hover {
+  .board:hover {
     background-position: 0 100%;
-}
+  }
   
-.board:hover .ikon-wrapper {
+  .board:hover .ikon-wrapper {
     background-color: #ffffff;
     color: var(--app-button-hover-text-color);
-}
+  }
 
-.board:hover .board-heading {
+  .board:hover .board-heading {
     color: #ffffff;
-}
+  }
 
-.board:hover p {
+  .board:hover p {
     color: #f0f0f0;
-}
-
-@media screen and (min-width: 768px) {
-	#our-services {
-	padding: 0 2em;
-	}
-
-    .horizontal { 
-        flex: 0 50%;
-         max-width: 50%;
-    } 
-}
-    
- @media screen and (min-width: 992px) {
-    #our-services {
-        padding: 1em 3em;
-    }
-    .horizontal {
-        flex: 0 0 33.33%;
-        max-width: 33.33%;
-    }
-}
-
-/* ------------------------------- */
-/* MAIN-CONTACT ME                 */
-/* ------------------------------- */
-
-#contact-us{
-    background-color: var(--app-gray-section);
-    padding: 80px 0;
-    height: auto;
-}
-
-#contact-us .col-bg {
-    height: auto;
-    padding: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-}
-
-#contact-us .col-1 {
-    width: calc(50% - 10px);
-    max-height: 400px;
-    flex-grow: 1 1 auto;
-}
-
-#contact-us .col-2 {
-    width: calc(50% - 10px);
-    max-height: 400px;
-    padding-left: 40px;
-    flex-grow: 1 1 auto;
-}
-
-#contact-us.col-2 > div {
-    padding-bottom: 20px;
-}
-
-#contact-us p {
-    text-align: left;
-    word-spacing: 5px; 
-    letter-spacing: 0.2px; 
-    line-height: 40px;
-}
-
-#contact-us h1 {
-    margin-top: 40px;
-}
-
-#icon2, #icon3 {
-    font-size: 18px;
-    color: var(--app-button-background-color);
-    transition: all 0.25s ease-in-out;
-}
-
-#contact-us p a {
-    text-decoration: none;
-    color: inherit;
-}
-
-#contact-us p a:hover {
-    color: var(--app-button-hover-text-color);
-}
-
-@media (max-width:768px) {
-    #contact-us .col-1, #contact-us .col-2  {
-        width: 80%;
-        padding: 0px;
-    }
-}
-
-@media (max-width: 480px) {
-    #contact-us .col-1, #contact-us .col-2  {
-        width: 80%;
-        padding: 0px;
-    }
-}
-
-#contact-us form {
-    font-size: 0;
-    width: 100%;
-}
-
-.contact-input {
-    width: 100%;
-    height: 46px;
-    border: 1px solid;
-    border-color: rgb(218, 225, 227);
-    border-radius: 5px;
-    font-weight: 400;
-    margin: 10px 0px;
-    padding-left: 10px;
-    font-size: 16px;
-}
-
-.contact-input:focus, .contact-input:hover {
-    border-color: var(--app-button-hover-text-color);
-}
-
-.send-btn {
-    margin: 10px 0px;
-    width: auto; 
-    height: 46px;
-    text-align: center;
-    border-radius: 50px;
-    font-size: 14px;
-    font-weight: 600;
-    letter-spacing: 0.2px;
-    text-transform: uppercase;
-    padding: 0px 35px;
-    color: var(--app-button-text-color);
-    background-color: var(--app-button-background-color);
-    transition: border-color 0.25s ease-in-out;
-    box-shadow: 0px 2px 8px rgba(213, 207, 207, 0.658);
-    border: 2px solid;
-    border-color: var(--app-button-background-color);
-}
-
-.send-btn:hover {
-    color: var(--app-button-hover-text-color);
-    background-color: var(--app-button-hover-background-color);
-}
-
-.invalid-feedback {
-    height: 14px;
-    color: #ef1c1c;
-    font-size: 12px;
-    display: none;
-}
-
-.submit-feedback {
-    height: 14px;
-    font-size: 14px;
-    display: none;
-}
+  }
 
 /* ------------------------------- */
 /* FOOTER                           */
@@ -644,3 +494,217 @@ footer .copy p {
     }    
 }
 
+
+/* ------------------------------- */
+/* MAIN-CONTACT ME                 */
+/* ------------------------------- */
+
+
+#contact-us{
+    background-color: var(--app-gray-section);
+    padding: 80px 0;
+    height: auto;
+}
+
+#contact-us .col-bg {
+    height: auto;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#contact-us .col-1 {
+    width: calc(50% - 10px);
+}
+
+#contact-us .col-2 {
+    width: calc(50% - 10px);
+    padding-left: 40px;
+}
+
+#contact-us.col-2 > div {
+    padding-bottom: 20px;
+}
+
+#contact-us p {
+    text-align: left;
+    word-spacing: 5px; 
+    letter-spacing: 0.2px; 
+    line-height: 40px;
+}
+
+#contact-us h1 {
+    margin-top: 40px;
+}
+
+#icon2, #icon3 {
+    font-size: 18px;
+    color: var(--app-button-background-color);
+    transition: all 0.25s ease-in-out;
+}
+
+#contact-us p a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#contact-us p a:hover {
+    color: var(--app-button-hover-text-color);
+}
+
+@media (max-width:768px) {
+    #contact-us .col-1, #contact-us.col-2  {
+        width: 100%;
+        padding: 0px;
+    }
+}
+
+@media (max-width: 480px) {
+    #contact-us .col-1, #contact-us .col-2  {
+        width: 100%;
+        padding: 0px;
+    }
+}
+
+#contact-us form {
+    font-size: 0;
+    width: 100%;
+}
+
+.contact-input {
+    width: 100%;
+    height: 46px;
+    border: 1px solid;
+    border-color: rgb(218, 225, 227);
+    border-radius: 5px;
+    font-weight: 400;
+    margin: 10px 0px;
+    padding-left: 10px;
+    font-size: 16px;
+}
+
+.contact-input:focus, .contact-input:hover {
+    border-color: var(--app-button-hover-text-color);
+}
+
+.send-btn {
+    margin: 10px 0px;
+    width: auto; 
+    height: 46px;
+    text-align: center;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+    padding: 0px 35px;
+    color: var(--app-button-text-color);
+    background-color: var(--app-button-background-color);
+    transition: border-color 0.25s ease-in-out;
+    box-shadow: 0px 2px 8px rgba(213, 207, 207, 0.658);
+    border: 2px solid;
+    border-color: var(--app-button-background-color);
+}
+
+.send-btn:hover {
+    color: var(--app-button-hover-text-color);
+    background-color: var(--app-button-hover-background-color);
+}
+
+/* ------------------------------- */
+/* Introduction                    */
+/* ------------------------------- */
+
+.intros{
+    background-color: var(--app-gray-section);
+}
+
+.rows {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2em 1em;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .columns {
+    width: 100%;
+    padding: 0.5em 0;
+  }
+  h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 3.5em;
+    color: var(--app-body-text-color);
+  }
+  .card {
+    height: 60vh;
+    box-shadow: 0 0 2.4em rgba(25, 0, 58, 0.1);
+    padding: 3.5em 1em;
+    border-radius: 0.6em;
+    color: var(--app-body-text-color);
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: #ffffff;
+  }
+  .card .img-container {
+    width: 8em;
+    height: 8em;
+    background-color: var(--app-button-background-color);
+    padding: 0.5em;
+    border-radius: 50%;
+    margin: 0 auto 2em auto;
+  }
+  .card img {
+     width:7em;
+     height:7em;
+     border-radius: 50%;
+     margin: 0 auto 2em auto;
+  }
+  .card h3 {
+    font-weight: 500;
+  }
+  .card p {
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 0.5em 0 2em 0;
+    letter-spacing: 2px;
+  }
+  
+  .icons {
+    height: 60px;
+    width: 180px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .card a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.4em;
+  }
+  .card:hover {
+    background: linear-gradient(#33354d, #6366f1);
+    color: #ffffff;
+  }
+
+  @media screen and (min-width: 768px) {
+    section {
+      padding: 1em 7em;
+    }
+  }
+  @media screen and (min-width: 992px) {
+    section {
+      padding: 1em;
+    }
+    .card {
+      padding: 5em 1em;
+    }
+    .columns {
+      flex: 0 0 33.33%;
+      max-width: 33.33%;
+      padding: 0 1em;
+    }
+  }
