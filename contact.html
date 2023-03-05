@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="authors" content="Laura Tejada, Deynni Almazan, Dilnaz Kaur" />
+    <meta name="description" content="Software Company Website" />
+    <meta name="keywords" content="html,css,web development, seo, services, projects" />
+    <title>Software Company Website</title>
+    <link 
+    rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">     
+    <link rel="stylesheet" href="style/index.css" media="all">
+    <script src="script/index.js" defer></script>
+</head>
+<body>
+    <header class="scrolled">
+        <div class="container flex">
+            <a href="index.html" class="title flex">
+                <img src="images/logo-soft.png" width="47" alt="logo">
+                <h1>DS Soft</h1>
+            </a>
+            <nav class="nav">
+                <div class="navbar">
+                    <i class="fa-solid fa-bars"></i>
+                    <i class="fa-solid fa-x not-show"></i>
+                </div>
+                <ul>
+                    <li><a href="index.html" target="_self">Home</a></li>
+                    <li><a href="index.html#our-services" target="_self">Services</a></li>
+                    <li><a href="contact.html" target="_self">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="background-opacity-nav-open not-show"></div>
+        </div>
+    </header>
+    <main>
+        <section id="about-us">
+            <div class="container"></div>
+        </section>
+
+        <section id="contact-us">
+            <div class="container">
+                <div class="page-title">
+                    <h1>Contact Us</h1>
+                    <div class="underline"></div>
+                </div>
+                <p> 
+                    Have a project in mind? Contact us directly or 
+                    fill out the form and let us know how we can help.
+                </p>
+                <div class="row col-bg">
+                    <div class="col-1">
+                        <div class="contact-form">
+                            <form action="#">
+                                <input type="text" class="contact-input c-name" 
+                                placeholder="Name (*)" required="">
+                                <div class="invalid-feedback f-name">*Please, enter your name</div>
+                                <input type="text" class="contact-input c-phone" placeholder="Phone (*)" required="">
+                                <div class="invalid-feedback f-phone">*Please, your phone number</div>
+                                <input type="text" class="contact-input c-email" placeholder="E-mail (*)" required="">
+                                <div class="invalid-feedback f-email">*Please, enter your E-mail</div>
+                                <input type="text" class="contact-input c-message" placeholder="Message" required="">
+                                <input type="button" class="send-btn" value="Send message"> 
+                                <div class="submit-feedback">Thank you for your message! We will contact you soon!</div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div>
+                            <p><i class="fa fa-map-marker" id="icon3"></i> Address: Winnipeg, Manitoba, Canada</p>
+                            <p><i class="fa fa-phone" id="icon3"></i> Phone: +01 111111</p>
+                            <p><i class="fa fa-envelope" id="icon3"> </i> Email: service@dssoft.ca</p>
+                            <p>&nbsp;</p>
+                        </div>
+                        <div>
+                            <h3>Follow Me</h3>
+                            <p><a href="" target="_blank"><i class="fa-brands fa-facebook-square" id="icon2"></i> Facebook </a></p>
+                            <p><a href="" target="_blank"><i class="fa-brands fa-instagram" id="icon2"></i> Instagram </a></p>
+                            <p><a href="" target="_blank"><i class="fa-brands fa-linkedin" id="icon2"> </i> Linkedin </a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="intros">
+            <div class="container">
+      <div class="rows">
+        <h1>Our Team</h1>
+      </div>
+      <div class="rows">
+        <!-- Column 1-->
+        <div class="columns">
+          <div class="card">
+            <div class="img-container">
+              <img src="../software-company/images/laura.png" />
+            </div>
+            <h3>Laura Tejada</h3>
+            <p>Software Developer Student</p>
+            <div class="icons">
+              <a href="https://github.com/lauratejada">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Column 2-->
+        <div class="columns">
+          <div class="card">
+            <div class="img-container">
+              <img src="../software-company/images/deynni.png" />
+            </div>
+            <h3>Deynni Almazan</h3>
+            <p>Software Developer Student</p>
+            <div class="icons">
+              <a href="https://github.com/deynnialmazan">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Column 3-->
+        <div class="columns">
+          <div class="card">
+            <div class="img-container">
+              <img src="../software-company/images/dilnaz.png" />
+            </div>
+            <h3>Dilnaz Kaur</h3>
+            <p>Software Developer Student</p>
+            <div class="icons">
+                <a href="https://github.com/Dilnaz-kaur22"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+            </div>
+    </section>
+    </main>
+
+
+    <footer>
+        <div class="container row">
+            <div class="logo col">
+                <a href="index.html" class="title flex">
+                    <img src="images/logo-footer.png" width="47" alt="logo">
+                    <h1>DS Soft</h1>
+                </a>
+            </div>
+            <div class="links col">
+                <h3>Menu</h3>
+                <ul>
+                    <li><a href="index.html" target="_self">Home</a></li>
+                    <li><a href="index.html#our-services" target="_self">Services</a></li>
+                    <li><a href="contact.html" target="_self">Contact</a></li>
+                </ul>
+            </div>
+            <div class="copy col">
+                <p>Copyright &copy; 2023 DS Soft. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
