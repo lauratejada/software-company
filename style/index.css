@@ -580,6 +580,16 @@ footer .copy p {
     color: var(--app-button-hover-text-color);
 }
 
+.submit-feedback {
+    color: var(--app-body-text-color);
+    display: none;
+}
+
+.invalid-feedback {
+    color: #ff0000;
+    display: none;
+}
+
 @media (max-width:768px) {
     #contact-us .col-1, #contact-us .col-2  {
         width: 100%;
