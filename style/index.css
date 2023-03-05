@@ -543,7 +543,7 @@ footer .copy p {
 
 #contact-us h1 {
     margin-top: 40px;
-    justify-content: center;
+    text-align: center;
     color: var(--app-title-color);
 }
 
