@@ -91,4 +91,10 @@ sendBtn.addEventListener('click', () => {
     } else { 
         messageEmail.style.display = 'none';
     } 
+
+    if (isName(contactName.value.trim()) && isPhoneNumber(contactPhone.value.trim()) && isEmail(contactEmail.value.trim())) {
+        messageSubmit.style.display = 'block'
+    } else { 
+        messageSubmit.style.display = 'none';
+    } 
 });
