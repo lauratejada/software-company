@@ -46,6 +46,7 @@ header {
     background-color:var(--app-header-background-color);
     height: 76px;
     width: 100%;
+    z-index: 95;
 }
 
 header .flex {
@@ -338,6 +339,7 @@ h1.h-title {
     display: grid;
     place-items: center;
     background-color: var(--app-gray-section);
+    padding: 50px 0;
   }
 
   .vertical {
@@ -369,6 +371,7 @@ h1.h-title {
     font-weight: 800;
     color: var(--app-title-color);
     margin: 1em 0;
+    padding-left: 60vh;
   } 
 
   .service-para{
@@ -376,7 +379,7 @@ h1.h-title {
     font-size: 15px;
     line-height: 1.6;
     letter-spacing: 0.03em;
-    padding-left: 30px;
+    padding: 15px 0px 15px 30px;
   }
 
   .board-heading {
@@ -392,6 +395,7 @@ h1.h-title {
     font-size: 15px;
     line-height: 1.6;
     letter-spacing: 0.03em;
+    text-align: justify;
   }
   
   .ikon-wrapper {
@@ -423,6 +427,25 @@ h1.h-title {
 
   .board:hover p {
     color: #f0f0f0;
+  }
+
+  @media screen and (min-width: 768px) {
+    section {
+      padding: 0 2em;
+    }
+    .horizontal {
+      flex: 0 50%;
+      max-width: 50%;
+    }
+  }
+  @media screen and (min-width: 992px) {
+    section {
+      padding: 1em 3em;
+    }
+    .horizontal {
+      flex: 0 0 33.33%;
+      max-width: 33.33%;
+    }
   }
 
 /* ------------------------------- */
