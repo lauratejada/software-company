@@ -236,6 +236,7 @@ h1.h-title {
     height: 55px;
     text-align: center;
     text-decoration: none;
+    text-transform: uppercase;
     letter-spacing: 0.2px;
     font-weight: 600;
     font-size: 16px;
@@ -299,10 +300,25 @@ h1.h-title {
 }
 
 
-
-
+[data-animation-offset] {
+    animation: trans 0.5s ease-in ;
+  }
   
-   
+  [data-animation-offset="first"] { animation-delay: 0.2s;}
+  [data-animation-offset="second"] { animation-delay: 0.3s;}
+  [data-animation-offset="third"] { animation-delay: 0.5s;}
+  
+  @keyframes trans {
+    from {
+        opacity: 0;
+        translate: -25px 0;
+        
+    } to {
+        opacity: 3;
+        translate: 0 0;
+    }
+  }
+  
 
 /* ------------------------------- */
 /* MAIN - SERVCES                  */
@@ -425,82 +441,6 @@ h1.h-title {
     }
   }
 
-/* ------------------------------- */
-/* FOOTER                           */
-/* ------------------------------- */
-
-footer {
-    width: 100%;
-    background-color: var(--app-footer-background-color);
-    color: var(--app-footer-text-color);
-    padding: 50px 0px;
-}
-
-footer .flex {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-footer .title {
-    line-height: 50px; 
-    display: flex;
-}
-
-footer .title h1 {
-    margin-left: 10px;
-    font-size: 22px;
-    color: var(--app-footer-text-color);
-    display: flex;
-}
-
-footer a {
-    text-decoration: none;
-    color: var(--app-footer-text-color);
-    line-height: 40px;
-}
-
-footer a:hover {
-    color: var(--app-button-hover-text-color);
-}
-
-footer .row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0px;
-}
-
-footer .col {
-    width: calc(33% - 0px);
-}
-
-footer .copy p {
-    font-size: 16px;
-    font-weight: 400;
-}
-
-
-@media (max-width:768px) {
-    footer .col  {
-        width: 100%;
-        padding: 0px;
-    }
-
-    footer .col ~ .col {
-        margin-top: 25px;
-    }
-}
-
-@media (max-width: 480px) {
-    footer .col  {
-        width: 100%;
-        padding: 0px;
-    }
-
-    footer .col ~ .col {
-        margin-top: 25px;
-    }    
-}
 
 
 /* ------------------------------- */
@@ -580,9 +520,9 @@ footer .copy p {
 }
 
 .submit-feedback {
-    color: var(--app-body-text-color);
+    color: var(--app-button-background-color);
     display: none;
-    font-size: 14px;
+    font-size: 18px;
 }
 
 .invalid-feedback {
@@ -775,3 +715,82 @@ footer .copy p {
   }
 
   }
+
+
+/* ------------------------------- */
+/* FOOTER                           */
+/* ------------------------------- */
+
+footer {
+    width: 100%;
+    background-color: var(--app-footer-background-color);
+    color: var(--app-footer-text-color);
+    padding: 50px 0px;
+}
+
+footer .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .title {
+    line-height: 50px; 
+    display: flex;
+}
+
+footer .title h1 {
+    margin-left: 10px;
+    font-size: 22px;
+    color: var(--app-footer-text-color);
+    display: flex;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--app-footer-text-color);
+    line-height: 40px;
+}
+
+footer a:hover {
+    color: var(--app-button-hover-text-color);
+}
+
+footer .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0px;
+}
+
+footer .col {
+    width: calc(33% - 0px);
+}
+
+footer .copy p {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+@media (max-width:768px) {
+    footer .col  {
+        width: 100%;
+        padding: 0px;
+    }
+
+    footer .col ~ .col {
+        margin-top: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    footer .col  {
+        width: 100%;
+        padding: 0px;
+    }
+
+    footer .col ~ .col {
+        margin-top: 25px;
+    }    
+}
+
