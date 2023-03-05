@@ -214,14 +214,13 @@ nav ul li a:hover {
 .h-text {
     display: flex;
     place-content: center;
-    width: min(100% - 100px, 1080px);
+    width: 60%;
     color: var(--app-gray-section);
     margin: auto;
 }
 
 h1.h-title {
-    font-size: 45px;
-    font-weight: 800;
+    font-size: 35px;
     color: var(--app-body-background-color);
 }
 
@@ -268,7 +267,7 @@ h1.h-title {
     position: center;
     place-items: center;
     line-height: 50px;
-    bottom: 50%;
+    top: 20vh;
 }
 
 #icon1, .fa-solid {
@@ -318,7 +317,26 @@ h1.h-title {
         translate: 0 0;
     }
   }
-  
+
+@media (max-width:768px) {
+    h1.h-title {
+        font-size: 24px;
+    }
+
+    .h-text {
+        width: 90%;
+    }
+}
+
+@media (min-width:768px) { 
+    h1.h-title {
+        font-size: 35px;
+    }
+
+    .h-text {
+        width: 60%;
+    }
+}
 
 /* ------------------------------- */
 /* MAIN - SERVCES                  */
@@ -793,4 +811,3 @@ footer .copy p {
         margin-top: 25px;
     }    
 }
-
