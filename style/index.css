@@ -455,6 +455,7 @@ h1.h-title {
     height: auto;
     padding: 30px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 }
@@ -462,12 +463,14 @@ h1.h-title {
 #contact-us .col-1 {
     width: calc(50% - 10px);
     max-height: 400px;
+    flex-grow: 1 1 auto;
 }
 
 #contact-us .col-2 {
     width: calc(50% - 10px);
     max-height: 400px;
     padding-left: 40px;
+    flex-grow: 1 1 auto;
 }
 
 #contact-us.col-2 > div {
@@ -501,15 +504,15 @@ h1.h-title {
 }
 
 @media (max-width:768px) {
-    #contact-us .col-1, #contact-us.col-2  {
-        width: 100%;
+    #contact-us .col-1, #contact-us .col-2  {
+        width: 80%;
         padding: 0px;
     }
 }
 
 @media (max-width: 480px) {
     #contact-us .col-1, #contact-us .col-2  {
-        width: 100%;
+        width: 80%;
         padding: 0px;
     }
 }
