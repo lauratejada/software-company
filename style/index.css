@@ -539,12 +539,16 @@ footer .copy p {
     text-align: left;
     letter-spacing: 0.03em; 
     line-height: 1.6;
+    margin-left: 40px;
 }
 
 #contact-us h1 {
+    font-size: 30px;
+    font-weight: 800;
     margin-top: 40px;
     text-align: center;
     color: var(--app-title-color);
+    margin-bottom: 15px;
 }
 
 #icon2, #icon3 {
@@ -624,8 +628,8 @@ footer .copy p {
     box-shadow: 2px 2px 2px rgb(0 0 0 / 0.1);
     border: 2px solid;
     border-color: var(--app-button-background-color);
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     transition: all 0.25s ease-in-out; 
 }
 
@@ -719,7 +723,12 @@ footer .copy p {
     section {
       padding: 1em 7em;
     }
+    .send-btn {
+        margin-top: 15px;
+        margin-bottom: 15px;
   }
+}
+
   @media screen and (min-width: 992px) {
     section {
       padding: 1em;
@@ -732,4 +741,10 @@ footer .copy p {
       max-width: 33.33%;
       padding: 0 1em;
     }
+
+    .send-btn {
+        margin-top: 15px;
+        margin-bottom: 15px;
+  }
+
   }
