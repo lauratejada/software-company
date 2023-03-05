@@ -37,7 +37,7 @@ navMenu.addEventListener('click', () => {
     }
 });
 
-//Contact-me page
+//Contact-me form
 
 const sendBtn = document.querySelector('.send-btn');
 const contactName = document.querySelector('.c-name');
