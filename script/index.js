@@ -48,7 +48,6 @@ const messagePhone = document.querySelector('.f-phone');
 const messageEmail = document.querySelector('.f-email');
 const messageSubmit = document.querySelector('.submit-feedback');
 
-//Validating data
 sendBtn.addEventListener('click', () => {
 
     if (contactName.value.trim() <= 0 ) {
@@ -65,7 +64,6 @@ sendBtn.addEventListener('click', () => {
         messageEmail.style.display = 'block'
         } else { messageEmail.style.display = 'none';
     } 
-
 
     if (contactName.value.trim() ) {
         messageSubmit.style.display = 'block'
