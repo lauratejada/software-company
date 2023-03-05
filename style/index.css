@@ -472,6 +472,8 @@ footer .title {
 footer .title h1 {
     margin-left: 10px;
     font-size: 22px;
+    color: var(--app-footer-text-color);
+    display: flex;
 }
 
 footer a {
