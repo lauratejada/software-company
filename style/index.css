@@ -458,6 +458,12 @@ footer {
     padding: 50px 0px;
 }
 
+footer .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 footer .title {
     line-height: 50px; 
     display: flex;
@@ -640,7 +646,7 @@ footer .copy p {
 /* Introduction                    */
 /* ------------------------------- */
 
-.intros{
+.intros {
     background-color: var(--app-header-background-color);
     padding: 50px 0;
 }
@@ -657,12 +663,14 @@ footer .copy p {
     width: 100%;
     padding: 0.5em 0;
   }
-  h1 {
+
+ .intros h1 {
     width: 100%;
     text-align: center;
     font-size: 30px;
     color: var(--app-body-text-color);
   }
+
   .card {
     height: 60vh;
     box-shadow: 0 0 2.4em rgba(25, 0, 58, 0.1);
@@ -673,6 +681,7 @@ footer .copy p {
     transition: 0.3s;
     background-color: #ffffff;
   }
+  
   .card .img-container {
     width: 8em;
     height: 8em;
@@ -681,15 +690,18 @@ footer .copy p {
     border-radius: 50%;
     margin: 0 auto 2em auto;
   }
+  
   .card img {
      width:7em;
      height:7em;
      border-radius: 50%;
      margin: 0 auto 2em auto;
   }
+  
   .card h3 {
     font-weight: 500;
   }
+
   .card p {
     font-weight: 300;
     text-transform: uppercase;
@@ -697,7 +709,7 @@ footer .copy p {
     letter-spacing: 2px;
   }
   
-  .icons {
+  .intros.icons {
     height: 60px;
     width: 180px;
     margin: auto;
@@ -710,18 +722,19 @@ footer .copy p {
     color: inherit;
     font-size: 1.4em;
   }
+  
   .card:hover {
     background: linear-gradient(#33354d, #6366f1);
     color: #ffffff;
   }
 
   @media screen and (min-width: 768px) {
-    section {
+    .intros {
       padding: 1em 7em;
     }
   }
   @media screen and (min-width: 992px) {
-    section {
+    .intros {
       padding: 1em;
     }
     .card {
