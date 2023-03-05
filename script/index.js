@@ -67,10 +67,8 @@ sendBtn.addEventListener('click', () => {
     } 
 
 
-
     if (contactName.value.trim() ) {
         messageSubmit.style.display = 'block'
     }  else { messageSubmit.style.display = 'none';
-}
-
+    }
 })
