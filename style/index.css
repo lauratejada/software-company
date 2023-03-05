@@ -657,8 +657,10 @@ footer .copy p {
     margin: 0 auto 2em auto;
   }
   .card img {
-    width: 100%;
-    border-radius: 50%;
+     width:7em;
+     height:7em;
+     border-radius: 50%;
+     margin: 0 auto 2em auto;
   }
   .card h3 {
     font-weight: 500;
