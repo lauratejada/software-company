@@ -191,11 +191,10 @@ nav ul li a:hover {
 /* ------------------------------- */
 
 
-
 #hero-banner {
     background: rgba(168, 168, 168, 1) url("../images/hero-banner.jpg") center center / cover no-repeat;
     background-attachment: fixed;
-    height: 100vh; 
+    height: 100vh;
     text-align: center; 
     overflow: hidden; 
     display: grid;
@@ -215,15 +214,13 @@ nav ul li a:hover {
 .h-text {
     display: flex;
     place-content: center;
-    width: min(100% - 100px, 1080px);
-    height: 700px;
+    width: 60%;
     color: var(--app-gray-section);
     margin: auto;
 }
 
 h1.h-title {
-    font-size: 45px;
-    font-weight: 800;
+    font-size: 35px;
     color: var(--app-body-background-color);
 }
 
@@ -238,6 +235,7 @@ h1.h-title {
     height: 55px;
     text-align: center;
     text-decoration: none;
+    text-transform: uppercase;
     letter-spacing: 0.2px;
     font-weight: 600;
     font-size: 16px;
@@ -260,13 +258,16 @@ h1.h-title {
     color: var(--app-body-background-color);
 }
 
-.nav-media { 
+.nav-media {
+    position: relative; 
     height: 50px;
-    display:flex;
+    display: flex;
     text-align: left;
     justify-content: space-between;
     position: center;
     place-items: center;
+    line-height: 50px;
+    top: 20vh;
 }
 
 #icon1, .fa-solid {
@@ -297,38 +298,45 @@ h1.h-title {
     color: var(--app-button-hover-text-color);
 }
 
-@media (min-width:768px) {
 
-.content {
-    min-width: 700px;
-}
-
-.h-title {
-    font-size: 40px;
-}
-
-.about-text {
-    font-size: 20px;
-}
-
-}
+[data-animation-offset] {
+    animation: trans 0.5s ease-in ;
+  }
+  
+  [data-animation-offset="first"] { animation-delay: 0.2s;}
+  [data-animation-offset="second"] { animation-delay: 0.3s;}
+  [data-animation-offset="third"] { animation-delay: 0.5s;}
+  
+  @keyframes trans {
+    from {
+        opacity: 0;
+        translate: -25px 0;
+        
+    } to {
+        opacity: 3;
+        translate: 0 0;
+    }
+  }
 
 @media (max-width:768px) {
+    h1.h-title {
+        font-size: 24px;
+    }
 
-.content{
-    min-width: 500;
+    .h-text {
+        width: 90%;
+    }
 }
 
-.h-title {
-    font-size: 30px;
-}
+@media (min-width:768px) { 
+    h1.h-title {
+        font-size: 35px;
+    }
 
-.about-text {
-    font-size: 20px;
+    .h-text {
+        width: 60%;
+    }
 }
-
-}
-
 
 /* ------------------------------- */
 /* MAIN - SERVCES                  */
@@ -341,6 +349,10 @@ h1.h-title {
     background-color: var(--app-gray-section);
     padding: 50px 0;
   }
+
+#our-services h1 {
+    color: var(--app-title-color);
+}
 
   .vertical {
     display: flex;
@@ -447,6 +459,282 @@ h1.h-title {
     }
   }
 
+
+
+/* ------------------------------- */
+/* MAIN-CONTACT ME                 */
+/* ------------------------------- */
+
+
+#contact-us {
+    background-color: var(--app-gray-section);
+    padding: 80px 0;
+    height: auto;
+}
+
+#contact-us .col-bg {
+    height: auto;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#contact-us .col-1 {
+    width: calc(50% - 10px);
+    flex-grow: 1 1 auto;
+}
+
+#contact-us .col-2 {
+    width: calc(50% - 10px);
+    padding-left: 40px;
+    flex-grow: 1 1 auto;
+}
+
+#contact-us .info {
+    margin-left: 40px;
+}
+
+#contact-us .col-2 p {
+    line-height: 40px;
+}
+
+
+
+#contact-us .col-2 > div {
+    padding-bottom: 20px;
+}
+
+#contact-us .col2 p {
+    text-align: left;
+    letter-spacing: 0.03em; 
+    line-height: 1.6;
+    margin-left: 40px;
+}
+
+#contact-us h1 {
+    font-size: 30px;
+    font-weight: 800;
+    margin-top: 40px;
+    text-align: center;
+    color: var(--app-title-color);
+    margin-bottom: 15px;
+}
+
+#icon2, #icon3 {
+    font-size: 18px;
+    color: var(--app-button-background-color);
+    transition: all 0.25s ease-in-out;
+}
+
+#contact-us p a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#contact-us p a:hover {
+    color: var(--app-button-hover-text-color);
+}
+
+.submit-feedback {
+    color: var(--app-button-background-color);
+    display: none;
+    font-size: 18px;
+}
+
+.invalid-feedback {
+    color: #ff0000;
+    display: none;
+    font-size: 14px;
+}
+
+@media (max-width:768px) {
+    #contact-us .col-1, #contact-us .col-2  {
+        width: 100%;
+        padding: 0px;
+    }
+
+    #contact-us .col-2  {
+        margin-top: 30px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    #contact-us .col-1, #contact-us .col-2  {
+        width: 100%;
+        padding: 0px;
+    }
+
+    #contact-us .col-2  {
+        margin-top: 30px;
+    }
+}
+
+#contact-us form {
+    font-size: 0;
+    width: 100%;
+}
+
+.contact-input {
+    width: 100%;
+    height: 46px;
+    border: 1px solid;
+    border-color: rgb(218, 225, 227);
+    border-radius: 5px;
+    font-weight: 400;
+    margin: 10px 0px;
+    padding-left: 10px;
+    font-size: 16px;
+}
+
+.contact-input:focus, .contact-input:hover {
+    border-color: var(--app-button-hover-text-color);
+}
+
+.send-btn {
+    width: 200px; 
+    height: 55px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+    padding: 0px 35px;
+    color: var(--app-button-text-color);
+    background-color: var(--app-button-background-color);
+    box-shadow: 2px 2px 2px rgb(0 0 0 / 0.1);
+    border: 2px solid;
+    border-color: var(--app-button-background-color);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    transition: all 0.25s ease-in-out; 
+}
+
+.send-btn:hover {
+    color: var(--app-button-hover-text-color);
+    background-color: var(--app-button-hover-background-color);
+}
+
+/* ------------------------------- */
+/* Introduction                    */
+/* ------------------------------- */
+
+.intros {
+    background-color: var(--app-header-background-color);
+    padding: 50px 0;
+}
+
+.rows {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2em 1em;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .columns {
+    width: 100%;
+    padding: 0.5em 0;
+  }
+
+ .intros h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    color: var(--app-title-color);
+  }
+
+  .card {
+    height: 60vh;
+    box-shadow: 0 0 2.4em rgba(25, 0, 58, 0.1);
+    padding: 3.5em 1em;
+    border-radius: 0.6em;
+    color: var(--app-body-text-color);
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: #ffffff;
+  }
+  
+  .card .img-container {
+    width: 8em;
+    height: 8em;
+    background-color: var(--app-button-background-color);
+    padding: 0.5em;
+    border-radius: 50%;
+    margin: 0 auto 2em auto;
+  }
+  
+  .card img {
+     width:7em;
+     height:7em;
+     border-radius: 50%;
+     margin: 0 auto 2em auto;
+  }
+  
+  .card h3 {
+    font-weight: 500;
+  }
+
+  .card p {
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 0.5em 0 2em 0;
+    letter-spacing: 2px;
+  }
+  
+  .intros.icons {
+    height: 60px;
+    width: 180px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .card a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.4em;
+  }
+  
+  .card:hover {
+    background: linear-gradient(#33354d, #6366f1);
+    color: #ffffff;
+  }
+
+  @media screen and (min-width: 768px) {
+    .intros {
+      padding: 1em 7em;
+    }
+    .send-btn {
+        margin-top: 15px;
+        margin-bottom: 15px;
+  }
+}
+
+  @media screen and (min-width: 992px) {
+    .intros {
+      padding: 1em;
+    }
+    .card {
+      padding: 5em 1em;
+    }
+    .columns {
+      flex: 0 0 33.33%;
+      max-width: 33.33%;
+      padding: 0 1em;
+    }
+
+    .send-btn {
+        margin-top: 15px;
+        margin-bottom: 15px;
+  }
+
+  }
+
+
 /* ------------------------------- */
 /* FOOTER                           */
 /* ------------------------------- */
@@ -456,6 +744,12 @@ footer {
     background-color: var(--app-footer-background-color);
     color: var(--app-footer-text-color);
     padding: 50px 0px;
+}
+
+footer .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 footer .title {
@@ -517,219 +811,3 @@ footer .copy p {
         margin-top: 25px;
     }    
 }
-
-
-/* ------------------------------- */
-/* MAIN-CONTACT ME                 */
-/* ------------------------------- */
-
-
-#contact-us{
-    background-color: var(--app-gray-section);
-    padding: 80px 0;
-    height: auto;
-}
-
-#contact-us .col-bg {
-    height: auto;
-    padding: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#contact-us .col-1 {
-    width: calc(50% - 10px);
-}
-
-#contact-us .col-2 {
-    width: calc(50% - 10px);
-    padding-left: 40px;
-}
-
-#contact-us.col-2 > div {
-    padding-bottom: 20px;
-}
-
-#contact-us p {
-    text-align: left;
-    word-spacing: 5px; 
-    letter-spacing: 0.2px; 
-    line-height: 40px;
-}
-
-#contact-us h1 {
-    margin-top: 40px;
-}
-
-#icon2, #icon3 {
-    font-size: 18px;
-    color: var(--app-button-background-color);
-    transition: all 0.25s ease-in-out;
-}
-
-#contact-us p a {
-    text-decoration: none;
-    color: inherit;
-}
-
-#contact-us p a:hover {
-    color: var(--app-button-hover-text-color);
-}
-
-@media (max-width:768px) {
-    #contact-us .col-1, #contact-us.col-2  {
-        width: 100%;
-        padding: 0px;
-    }
-}
-
-@media (max-width: 480px) {
-    #contact-us .col-1, #contact-us .col-2  {
-        width: 100%;
-        padding: 0px;
-    }
-}
-
-#contact-us form {
-    font-size: 0;
-    width: 100%;
-}
-
-.contact-input {
-    width: 100%;
-    height: 46px;
-    border: 1px solid;
-    border-color: rgb(218, 225, 227);
-    border-radius: 5px;
-    font-weight: 400;
-    margin: 10px 0px;
-    padding-left: 10px;
-    font-size: 16px;
-}
-
-.contact-input:focus, .contact-input:hover {
-    border-color: var(--app-button-hover-text-color);
-}
-
-.send-btn {
-    margin: 10px 0px;
-    width: auto; 
-    height: 46px;
-    text-align: center;
-    border-radius: 50px;
-    font-size: 14px;
-    font-weight: 600;
-    letter-spacing: 0.2px;
-    text-transform: uppercase;
-    padding: 0px 35px;
-    color: var(--app-button-text-color);
-    background-color: var(--app-button-background-color);
-    transition: border-color 0.25s ease-in-out;
-    box-shadow: 0px 2px 8px rgba(213, 207, 207, 0.658);
-    border: 2px solid;
-    border-color: var(--app-button-background-color);
-}
-
-.send-btn:hover {
-    color: var(--app-button-hover-text-color);
-    background-color: var(--app-button-hover-background-color);
-}
-
-/* ------------------------------- */
-/* Introduction                    */
-/* ------------------------------- */
-
-.intros{
-    background-color: var(--app-header-background-color);
-    padding: 50px 0;
-}
-
-.rows {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 2em 1em;
-    text-align: center;
-    width: 100%;
-  }
-  
-  .columns {
-    width: 100%;
-    padding: 0.5em 0;
-  }
-  h1 {
-    width: 100%;
-    text-align: center;
-    font-size: 30px;
-    color: var(--app-body-text-color);
-  }
-  .card {
-    height: 60vh;
-    box-shadow: 0 0 2.4em rgba(25, 0, 58, 0.1);
-    padding: 3.5em 1em;
-    border-radius: 0.6em;
-    color: var(--app-body-text-color);
-    cursor: pointer;
-    transition: 0.3s;
-    background-color: #ffffff;
-  }
-  .card .img-container {
-    width: 8em;
-    height: 8em;
-    background-color: var(--app-button-background-color);
-    padding: 0.5em;
-    border-radius: 50%;
-    margin: 0 auto 2em auto;
-  }
-  .card img {
-     width:7em;
-     height:7em;
-     border-radius: 50%;
-     margin: 0 auto 2em auto;
-  }
-  .card h3 {
-    font-weight: 500;
-  }
-  .card p {
-    font-weight: 300;
-    text-transform: uppercase;
-    margin: 0.5em 0 2em 0;
-    letter-spacing: 2px;
-  }
-  
-  .icons {
-    height: 60px;
-    width: 180px;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-  }
-
-  .card a {
-    text-decoration: none;
-    color: inherit;
-    font-size: 1.4em;
-  }
-  .card:hover {
-    background: linear-gradient(#33354d, #6366f1);
-    color: #ffffff;
-  }
-
-  @media screen and (min-width: 768px) {
-    section {
-      padding: 1em 7em;
-    }
-  }
-  @media screen and (min-width: 992px) {
-    section {
-      padding: 1em;
-    }
-    .card {
-      padding: 5em 1em;
-    }
-    .columns {
-      flex: 0 0 33.33%;
-      max-width: 33.33%;
-      padding: 0 1em;
-    }
-  }

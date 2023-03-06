@@ -48,25 +48,53 @@ const messagePhone = document.querySelector('.f-phone');
 const messageEmail = document.querySelector('.f-email');
 const messageSubmit = document.querySelector('.submit-feedback');
 
+function isEmail(mail) {
+    let patternEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    if (patternEmail.test(mail)) {
+        return true;
+    }
+    return false;
+}
+
+function isName(name) {
+    let patternName = /^[a-zA-Z]+(\s[a-zA-Z]+)*$/;
+     if (patternName.test(name)) {
+        return true;
+    }
+    return false;
+}
+
+function isPhoneNumber(number) {
+    let patternPhone = /^\d{9}$/;
+    if (patternPhone.test(number)) {
+        return true;
+    }
+    return false;
+}
+
 sendBtn.addEventListener('click', () => {
 
-    if (contactName.value.trim() <= 0 ) {
+    if (!isName(contactName.value.trim())) {
         messageName.style.display = 'block'
-         } else { messageName.style.display = 'none';
-     }
+    } else { 
+        messageName.style.display = 'none';
+    }
 
-    if (contactPhone.value.trim() <= 0 ) {
+    if (!isPhoneNumber(contactPhone.value.trim())) {
         messagePhone.style.display = 'block'
-        } else { messagePhone.style.display = 'none';
+    } else { 
+        messagePhone.style.display = 'none';
     }
     
-    if (contactEmail.value.trim() <= 0 ) {
+    if (!isEmail(contactEmail.value.trim())) {
         messageEmail.style.display = 'block'
-        } else { messageEmail.style.display = 'none';
+    } else { 
+        messageEmail.style.display = 'none';
     } 
 
-    if (contactName.value.trim() ) {
+    if (isName(contactName.value.trim()) && isPhoneNumber(contactPhone.value.trim()) && isEmail(contactEmail.value.trim())) {
         messageSubmit.style.display = 'block'
-    }  else { messageSubmit.style.display = 'none';
-    }
-})
+    } else { 
+        messageSubmit.style.display = 'none';
+    } 
+});
