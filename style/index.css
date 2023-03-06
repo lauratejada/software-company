@@ -802,6 +802,7 @@ footer .col {
 footer .copy p {
     font-size: 16px;
     font-weight: 400;
+    text-align: end;
 }
 
 
