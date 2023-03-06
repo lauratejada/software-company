@@ -192,13 +192,14 @@ nav ul li a:hover {
 
 
 #hero-banner {
-    background: rgba(168, 168, 168, 1) url("../images/hero-banner.jpg") center center / cover no-repeat;
-    background-attachment: fixed;
     height: 100vh;
     text-align: center; 
+    margin-top: 76px;
     overflow: hidden; 
     display: grid;
     place-items: center;   
+    background: rgba(168, 168, 168, 1) url("../images/hero-banner.jpg") center center / cover no-repeat;
+    background-attachment: fixed;
     background-blend-mode: multiply; 
 }
 
@@ -231,17 +232,15 @@ h1.h-title {
 }
 
 .h-button {
-    width: 200px;
-    height: 55px;
+    height: 50px;
+    width: 170px; 
     text-align: center;
-    text-decoration: none;
-    text-transform: uppercase;
     letter-spacing: 0.2px;
     font-weight: 600;
     font-size: 16px;
     border-radius: 10px;
     margin-top: 40px;
-    box-shadow: 2px 2px 2px rgb(0 0 0 / 0.1);
+    box-shadow: 0 0.5rem 1.125rem -0.5rem rgb(99 102 241 / 90%);
     color: var(--app-button-text-color);
     background-color: var(--app-button-background-color);
     transition: all 0.25s ease-in-out;
@@ -289,7 +288,7 @@ h1.h-title {
 .nav-contact a {
     color: var(--app-button-text-color);
     text-decoration: none;
-    font-size: 18px;
+    font-size: 16px;
     transition: all 0.25s ease-in-out;
 }
 
@@ -472,6 +471,7 @@ h1.h-title {
     height: auto;
 }
 
+
 #contact-us .col-bg {
     height: auto;
     padding: 30px;
@@ -491,6 +491,7 @@ h1.h-title {
     padding-left: 40px;
     flex-grow: 1 1 auto;
 }
+
 
 #contact-us .info {
     margin-left: 40px;
@@ -594,18 +595,16 @@ h1.h-title {
 }
 
 .send-btn {
-    width: 200px; 
-    height: 55px;
+    width: 170px; 
+    height: 50px;
     text-align: center;
     border-radius: 10px;
     font-size: 16px;
     font-weight: 600;
     letter-spacing: 0.2px;
-    text-transform: uppercase;
-    padding: 0px 35px;
     color: var(--app-button-text-color);
     background-color: var(--app-button-background-color);
-    box-shadow: 2px 2px 2px rgb(0 0 0 / 0.1);
+    box-shadow: 0 0.5rem 1.125rem -0.5rem rgb(99 102 241 / 90%);
     border: 2px solid;
     border-color: var(--app-button-background-color);
     margin-top: 20px;
