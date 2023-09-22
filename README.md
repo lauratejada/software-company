@@ -1,7 +1,7 @@
 ### Our company website
 
 Hello world.
-This is our new compnay website.
+This is our new company website.
 
 ## DEMO
 
